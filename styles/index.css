@@ -87,8 +87,8 @@ a {
   background-color: white;
   color: black;
   border: 2px solid #b62a2a;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   -webkit-box-shadow: #26394d 0px 10px 15px -5px;
           box-shadow: #26394d 0px 10px 15px -5px;
 }
