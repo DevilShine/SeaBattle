@@ -21,7 +21,6 @@ wrap.addEventListener("click", function (e) {
   var elem = e.target;
   var check = elem.matches(".button");
   if (check) {
-    console.log(elem.dataset.id);
     var ch;
     for (let i = 0; i < ships.length; i++) {
       if (ships[i] == elem.dataset.id) {
@@ -31,9 +30,8 @@ wrap.addEventListener("click", function (e) {
         ch = "false";
       }
     }
-    console.log(ch);
     if (ch == "true") {
-      alert("Nise Shot)");
+      alert("Nice Shot)");
     } else {
       alert("Miss((");
     }
