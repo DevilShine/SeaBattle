@@ -1,0 +1,25 @@
+.header__controls {
+    display: flex;
+    gap: 10px;
+
+    .header__button {
+        background: white;
+        color: #1e88e5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background: #f1f1f1;
+        }
+    }
+
+    .header__language {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background: #bbdefb;
+    }
+}

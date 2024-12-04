@@ -1,0 +1,15 @@
+.section__button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #0073e6, #005bb5);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}

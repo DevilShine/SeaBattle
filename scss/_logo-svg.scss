@@ -1,0 +1,85 @@
+.swords-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+
+    .sword {
+        margin: 5px;
+        width: 50px;
+        height: 106px;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: bottom;
+    }
+
+    .sword-left {
+        transform: rotate(30deg); // Изначальное скрещение
+    }
+
+    .sword-right {
+        transform: rotate(-30deg); // Изначальное скрещение
+    }
+
+    &.animate {
+        .sword-left {
+            animation: clash-left 1.5s ease-in-out;
+        }
+
+        .sword-right {
+            animation: clash-right 1.5s ease-in-out;
+        }
+    }
+
+    &:hover {
+        .sword-left {
+            animation: clash-left 1.5s ease-in-out;
+        }
+
+        .sword-right {
+            animation: clash-right 1.5s ease-in-out;
+        }
+    }
+}
+
+@keyframes clash-left {
+
+    0%,
+    100% {
+        transform: rotate(30deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+        z-index: 1;
+    }
+
+    50% {
+        transform: rotate(30deg);
+        z-index: +1;
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes clash-right {
+
+    0%,
+    100% {
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+}
