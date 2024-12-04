@@ -1,2 +1,20 @@
 @import "./scss/reset";
+@import "./scss/container";
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #e3f2fd, #90caf9);
+    color: #333;
+}
+
+@import "./scss/header";
+@import "./scss/main";
+@import "./scss/footer";
 @import "./scss/decor";
+@import "./scss/language";
+@import "./scss/section";
+@import "./scss/logo-svg";
+@import "./scss/media";

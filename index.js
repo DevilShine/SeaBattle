@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const swordsContainer = document.querySelector(".swords-container");
+  swordsContainer.classList.add("animate");
+
+  setTimeout(() => {
+    swordsContainer.classList.remove("animate");
+  }, 1500);
+});
+
+
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 var ships = ['1-a', '3-a', '4-a', '6-b', '2-c', '6-c', '2-d', '2-e', '6-f', '7-f', '8-f', '1-h', '2-h', '3-h', '4-h'];
 

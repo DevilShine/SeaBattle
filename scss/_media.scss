@@ -1,0 +1,27 @@
+@media (max-width: 606px) {
+    .header--wrap {
+        justify-content: center;
+    }
+
+    .swords-container {
+        height: 50px;
+
+        .sword {
+            width: 25px;
+            height: 50px;
+        }
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+
+@media (max-height: 660px) {
+    .footer {
+        margin-top: 0;
+    }
+}
